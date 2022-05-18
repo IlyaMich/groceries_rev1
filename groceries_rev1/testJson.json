@@ -1,0 +1,26 @@
+[
+  {
+    "Count": 5,
+    "Price": 0,
+    "ProductionDate": "2022-05-18T00:00:00+03:00",
+    "ExpiryDate": "2022-06-02T00:00:00+03:00"
+  },
+  {
+    "Count": 1,
+    "Price": 0,
+    "ProductionDate": "2022-05-18T00:00:00+03:00",
+    "ExpiryDate": "2022-06-02T00:00:00+03:00"
+  },
+  {
+    "Count": 6,
+    "Price": 0,
+    "ProductionDate": "2022-05-18T00:00:00+03:00",
+    "ExpiryDate": "2022-06-02T00:00:00+03:00"
+  },
+  {
+    "Count": 3,
+    "Price": 0,
+    "ProductionDate": "2022-05-18T00:00:00+03:00",
+    "ExpiryDate": "2022-06-02T00:00:00+03:00"
+  }
+]
