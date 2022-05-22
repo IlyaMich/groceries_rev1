@@ -15,7 +15,17 @@ namespace groceries_rev1
         int nCount = 0;
         string stType = "";
         int nFat = 0;
+        double dTotal = 0.0;
+        Image imImg;
 
+
+        /// 
+        /// ====== DEBUG ======
+        /// 
+
+        Image TEST_IMG1 = Image.FromFile(@"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\smallCow.bmp");
+        Image TEST_IMG2 = Image.FromFile(@"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\smallDog.bmp");
+        Image TEST_IMG3 = Image.FromFile(@"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\smallSnake.bmp");
 
         public Form2()
         {
@@ -64,12 +74,22 @@ namespace groceries_rev1
                 dPreservedForm.Count = nCount;
                 dPreservedForm.Fat = nFat;
                 dPreservedForm.Type = stType;
+                dPreservedForm.Total = nCount * dPreservedForm.Price;
+
+                dPreservedForm.Images.TryGetValue(stType, out imImg);
+
+                dPreservedForm.Image = imImg;
             }
             else if(mPreservedForm != null && dPreservedForm == null)
             {
                 mPreservedForm.Count = nCount;
                 mPreservedForm.Weight = nFat;
                 mPreservedForm.Type = stType;
+                mPreservedForm.Total = nFat * mPreservedForm.Price;
+
+                mPreservedForm.Images.TryGetValue(stType, out imImg);
+
+                mPreservedForm.Image = imImg;
             }
 
             MessageBox.Show("Updated, closing window");
@@ -106,6 +126,11 @@ namespace groceries_rev1
             }
 
             return false;
+        }
+
+        private void MatchImage()
+        {
+
         }
     }
 }

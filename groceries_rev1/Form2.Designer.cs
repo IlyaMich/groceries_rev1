@@ -75,9 +75,19 @@ namespace groceries_rev1
             // NUD_Count
             // 
             this.NUD_Count.Location = new System.Drawing.Point(77, 31);
+            this.NUD_Count.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NUD_Count.Name = "NUD_Count";
             this.NUD_Count.Size = new System.Drawing.Size(120, 23);
             this.NUD_Count.TabIndex = 3;
+            this.NUD_Count.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.NUD_Count.ValueChanged += new System.EventHandler(this.NUD_Count_ValueChanged);
             // 
             // B_Type1

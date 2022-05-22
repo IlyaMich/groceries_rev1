@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "groceries_rev1", "groceries_rev1\groceries_rev1.csproj", "{1CE76C88-7BC4-416A-B3BF-AB1A1BDB40EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "groceries_rev1", "groceries_rev1\groceries_rev1.csproj", "{1CE76C88-7BC4-416A-B3BF-AB1A1BDB40EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C6EB80A2-8953-4BA5-99A1-2CFFEBB1A4C6}"
+	ProjectSection(SolutionItems) = preProject
+		groceries_rev1\smallCow.bmp = groceries_rev1\smallCow.bmp
+		groceries_rev1\smallDog.bmp = groceries_rev1\smallDog.bmp
+		groceries_rev1\smallSnake.bmp = groceries_rev1\smallSnake.bmp
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

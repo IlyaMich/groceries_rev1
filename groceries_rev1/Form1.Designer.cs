@@ -41,7 +41,6 @@ namespace groceries_rev1
             this.B_SteakOption = new System.Windows.Forms.Button();
             this.B_ChickenOption = new System.Windows.Forms.Button();
             this.B_Meat = new System.Windows.Forms.Button();
-            this.B_Add = new System.Windows.Forms.Button();
             this.B_Remove = new System.Windows.Forms.Button();
             this.T_Dairy = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -68,6 +67,7 @@ namespace groceries_rev1
             // 
             // P_Dairy
             // 
+            this.P_Dairy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.P_Dairy.Controls.Add(this.B_YogurtOption);
             this.P_Dairy.Controls.Add(this.B_CheeseOption);
             this.P_Dairy.Controls.Add(this.B_MilkOption);
@@ -76,14 +76,14 @@ namespace groceries_rev1
             this.P_Dairy.MaximumSize = new System.Drawing.Size(378, 129);
             this.P_Dairy.MinimumSize = new System.Drawing.Size(378, 47);
             this.P_Dairy.Name = "P_Dairy";
-            this.P_Dairy.Size = new System.Drawing.Size(378, 47);
+            this.P_Dairy.Size = new System.Drawing.Size(378, 129);
             this.P_Dairy.TabIndex = 3;
             // 
             // B_YogurtOption
             // 
-            this.B_YogurtOption.Location = new System.Drawing.Point(3, 99);
+            this.B_YogurtOption.Location = new System.Drawing.Point(201, 99);
             this.B_YogurtOption.Name = "B_YogurtOption";
-            this.B_YogurtOption.Size = new System.Drawing.Size(372, 23);
+            this.B_YogurtOption.Size = new System.Drawing.Size(174, 23);
             this.B_YogurtOption.TabIndex = 6;
             this.B_YogurtOption.Text = "Yogurt";
             this.B_YogurtOption.UseVisualStyleBackColor = true;
@@ -91,9 +91,9 @@ namespace groceries_rev1
             // 
             // B_CheeseOption
             // 
-            this.B_CheeseOption.Location = new System.Drawing.Point(3, 74);
+            this.B_CheeseOption.Location = new System.Drawing.Point(201, 74);
             this.B_CheeseOption.Name = "B_CheeseOption";
-            this.B_CheeseOption.Size = new System.Drawing.Size(372, 23);
+            this.B_CheeseOption.Size = new System.Drawing.Size(174, 23);
             this.B_CheeseOption.TabIndex = 5;
             this.B_CheeseOption.Text = "Cheese";
             this.B_CheeseOption.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@ namespace groceries_rev1
             // 
             // B_MilkOption
             // 
-            this.B_MilkOption.Location = new System.Drawing.Point(3, 48);
+            this.B_MilkOption.Location = new System.Drawing.Point(201, 48);
             this.B_MilkOption.Name = "B_MilkOption";
-            this.B_MilkOption.Size = new System.Drawing.Size(372, 23);
+            this.B_MilkOption.Size = new System.Drawing.Size(174, 23);
             this.B_MilkOption.TabIndex = 4;
             this.B_MilkOption.Text = "Milk";
             this.B_MilkOption.UseVisualStyleBackColor = true;
@@ -111,9 +111,9 @@ namespace groceries_rev1
             // 
             // B_Dairy
             // 
-            this.B_Dairy.Location = new System.Drawing.Point(3, 3);
+            this.B_Dairy.Location = new System.Drawing.Point(201, 3);
             this.B_Dairy.Name = "B_Dairy";
-            this.B_Dairy.Size = new System.Drawing.Size(372, 39);
+            this.B_Dairy.Size = new System.Drawing.Size(174, 39);
             this.B_Dairy.TabIndex = 2;
             this.B_Dairy.Text = "Dairy";
             this.B_Dairy.UseVisualStyleBackColor = true;
@@ -125,18 +125,18 @@ namespace groceries_rev1
             this.P_Meat.Controls.Add(this.B_SteakOption);
             this.P_Meat.Controls.Add(this.B_ChickenOption);
             this.P_Meat.Controls.Add(this.B_Meat);
-            this.P_Meat.Location = new System.Drawing.Point(3, 56);
+            this.P_Meat.Location = new System.Drawing.Point(3, 138);
             this.P_Meat.MaximumSize = new System.Drawing.Size(378, 129);
             this.P_Meat.MinimumSize = new System.Drawing.Size(378, 47);
             this.P_Meat.Name = "P_Meat";
-            this.P_Meat.Size = new System.Drawing.Size(378, 47);
+            this.P_Meat.Size = new System.Drawing.Size(378, 129);
             this.P_Meat.TabIndex = 7;
             // 
             // B_FishOption
             // 
-            this.B_FishOption.Location = new System.Drawing.Point(3, 99);
+            this.B_FishOption.Location = new System.Drawing.Point(201, 99);
             this.B_FishOption.Name = "B_FishOption";
-            this.B_FishOption.Size = new System.Drawing.Size(372, 23);
+            this.B_FishOption.Size = new System.Drawing.Size(174, 23);
             this.B_FishOption.TabIndex = 6;
             this.B_FishOption.Text = "Fish";
             this.B_FishOption.UseVisualStyleBackColor = true;
@@ -144,9 +144,9 @@ namespace groceries_rev1
             // 
             // B_SteakOption
             // 
-            this.B_SteakOption.Location = new System.Drawing.Point(3, 74);
+            this.B_SteakOption.Location = new System.Drawing.Point(201, 74);
             this.B_SteakOption.Name = "B_SteakOption";
-            this.B_SteakOption.Size = new System.Drawing.Size(372, 23);
+            this.B_SteakOption.Size = new System.Drawing.Size(174, 23);
             this.B_SteakOption.TabIndex = 5;
             this.B_SteakOption.Text = "Steak";
             this.B_SteakOption.UseVisualStyleBackColor = true;
@@ -154,42 +154,33 @@ namespace groceries_rev1
             // 
             // B_ChickenOption
             // 
-            this.B_ChickenOption.Location = new System.Drawing.Point(3, 48);
+            this.B_ChickenOption.Location = new System.Drawing.Point(201, 48);
             this.B_ChickenOption.Name = "B_ChickenOption";
-            this.B_ChickenOption.Size = new System.Drawing.Size(372, 23);
+            this.B_ChickenOption.Size = new System.Drawing.Size(174, 23);
             this.B_ChickenOption.TabIndex = 4;
             this.B_ChickenOption.Text = "Chicken";
             this.B_ChickenOption.UseVisualStyleBackColor = true;
-            this.B_ChickenOption.Click += new System.EventHandler(this.B_CheeseOption_Click);
+            this.B_ChickenOption.Click += new System.EventHandler(this.B_ChickenOption_Click);
             // 
             // B_Meat
             // 
-            this.B_Meat.Location = new System.Drawing.Point(3, 3);
+            this.B_Meat.Location = new System.Drawing.Point(201, 3);
             this.B_Meat.Name = "B_Meat";
-            this.B_Meat.Size = new System.Drawing.Size(372, 39);
+            this.B_Meat.Size = new System.Drawing.Size(174, 39);
             this.B_Meat.TabIndex = 2;
             this.B_Meat.Text = "Meat";
             this.B_Meat.UseVisualStyleBackColor = true;
             this.B_Meat.Click += new System.EventHandler(this.B_Meat_Click);
             // 
-            // B_Add
-            // 
-            this.B_Add.Location = new System.Drawing.Point(335, 290);
-            this.B_Add.Name = "B_Add";
-            this.B_Add.Size = new System.Drawing.Size(75, 23);
-            this.B_Add.TabIndex = 1;
-            this.B_Add.Text = "Add";
-            this.B_Add.UseVisualStyleBackColor = true;
-            this.B_Add.Click += new System.EventHandler(this.B_Add_Click);
-            // 
             // B_Remove
             // 
-            this.B_Remove.Location = new System.Drawing.Point(338, 261);
+            this.B_Remove.Location = new System.Drawing.Point(134, 413);
             this.B_Remove.Name = "B_Remove";
             this.B_Remove.Size = new System.Drawing.Size(75, 23);
             this.B_Remove.TabIndex = 2;
-            this.B_Remove.Text = "Remove";
+            this.B_Remove.Text = "Clear Cart";
             this.B_Remove.UseVisualStyleBackColor = true;
+            this.B_Remove.Click += new System.EventHandler(this.B_RemoveAll_Click);
             // 
             // T_Dairy
             // 
@@ -201,8 +192,9 @@ namespace groceries_rev1
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-2, 12);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(415, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(415, 367);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseDoubleClick);
             // 
@@ -213,7 +205,7 @@ namespace groceries_rev1
             // 
             // B_Send
             // 
-            this.B_Send.Location = new System.Drawing.Point(12, 415);
+            this.B_Send.Location = new System.Drawing.Point(338, 385);
             this.B_Send.Name = "B_Send";
             this.B_Send.Size = new System.Drawing.Size(75, 23);
             this.B_Send.TabIndex = 4;
@@ -223,7 +215,7 @@ namespace groceries_rev1
             // 
             // B_Restore
             // 
-            this.B_Restore.Location = new System.Drawing.Point(104, 415);
+            this.B_Restore.Location = new System.Drawing.Point(12, 413);
             this.B_Restore.Name = "B_Restore";
             this.B_Restore.Size = new System.Drawing.Size(75, 23);
             this.B_Restore.TabIndex = 5;
@@ -233,7 +225,7 @@ namespace groceries_rev1
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(221, 415);
+            this.email.Location = new System.Drawing.Point(229, 414);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(100, 23);
             this.email.TabIndex = 6;
@@ -241,7 +233,7 @@ namespace groceries_rev1
             // 
             // SendEmail
             // 
-            this.SendEmail.Location = new System.Drawing.Point(328, 415);
+            this.SendEmail.Location = new System.Drawing.Point(335, 413);
             this.SendEmail.Name = "SendEmail";
             this.SendEmail.Size = new System.Drawing.Size(75, 23);
             this.SendEmail.TabIndex = 7;
@@ -260,7 +252,6 @@ namespace groceries_rev1
             this.Controls.Add(this.B_Send);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.B_Remove);
-            this.Controls.Add(this.B_Add);
             this.Controls.Add(this.FLP_Menu);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -277,7 +268,6 @@ namespace groceries_rev1
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel FLP_Menu;
-        private System.Windows.Forms.Button B_Add;
         private System.Windows.Forms.Button B_Remove;
         private System.Windows.Forms.Panel P_Dairy;
         private System.Windows.Forms.Button B_YogurtOption;
