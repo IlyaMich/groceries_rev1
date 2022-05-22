@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace groceries_rev1
 {
-    public abstract class Dairy : Product
+    public /*abstract*/ class Dairy : Product
     {
 
         /// <summary>

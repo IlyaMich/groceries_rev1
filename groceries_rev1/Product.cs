@@ -5,7 +5,8 @@ using System.Drawing;
 
 namespace groceries_rev1
 {
-    public abstract class Product
+    [Serializable]
+    public /*abstract*/ class Product
     {
         /// <summary>
         /// Implement:

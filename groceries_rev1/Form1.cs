@@ -66,8 +66,8 @@ namespace groceries_rev1
         {
             if (bIsDairyCollapsed)
             {
-                P_Dairy.Height += 10;
-                if (P_Dairy.Size == P_Dairy.MaximumSize)
+                P_Dairy1.Height += 10;
+                if (P_Dairy1.Size == P_Dairy1.MaximumSize)
                 {
                     T_Dairy.Stop();
                     bIsDairyCollapsed = false;
@@ -75,8 +75,8 @@ namespace groceries_rev1
             }
             else
             {
-                P_Dairy.Height -= 10;
-                if (P_Dairy.Size == P_Dairy.MinimumSize)
+                P_Dairy1.Height -= 10;
+                if (P_Dairy1.Size == P_Dairy1.MinimumSize)
                 {
                     T_Dairy.Stop();
                     bIsDairyCollapsed = true;
@@ -93,8 +93,8 @@ namespace groceries_rev1
         {
             if (bIsMeatCollapsed)
             {
-                P_Meat.Height += 10;
-                if (P_Meat.Size == P_Meat.MaximumSize)
+                P_Meat1.Height += 10;
+                if (P_Meat1.Size == P_Meat1.MaximumSize)
                 {
                     T_Meat.Stop();
                     bIsMeatCollapsed = false;
@@ -102,8 +102,8 @@ namespace groceries_rev1
             }
             else
             {
-                P_Meat.Height -= 10;
-                if (P_Meat.Size == P_Meat.MinimumSize)
+                P_Meat1.Height -= 10;
+                if (P_Meat1.Size == P_Meat1.MinimumSize)
                 {
                     T_Meat.Stop();
                     bIsMeatCollapsed = true;
@@ -225,13 +225,16 @@ namespace groceries_rev1
 
         private void B_Send_Click(object sender, EventArgs e)
         {
+            if (pLst.Count == 0) { MessageBox.Show("No items in cart!"); return; }
+
             var rRand = new Random();
             string stJsonString;
-            string stFileName = String.Format(@"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\testJson{0}.json", rRand.Next(0, 20));
+            //string stFileName = String.Format(@"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\testJson{0}.json", rRand.Next(0, 20));
+            string stFileName = @"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\testJson1.json";
             JsonSerializerOptions jso = new JsonSerializerOptions { WriteIndented = true };
             stJsonString = JsonSerializer.Serialize(pLst, jso);
 
-            File.Create(stFileName);
+            //File.Create(stFileName);
             if (File.Exists(stFileName))
             { 
                 using (StreamWriter sw = File.CreateText(stFileName))
@@ -244,17 +247,26 @@ namespace groceries_rev1
         private void B_Restore_Click(object sender, EventArgs e)
         {
             string stJsonString = "";
-            string stFileName = @"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\testJson.json";
+            //string stFileName = @"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\testJson.json";\
+            string stFileName = @"C:\Users\ilmih\OneDrive\Desktop\Study\CS\OOP\groceries_rev1\groceries_rev1\testJson1.json";
+            byte[] byteArray;
+            List<Product> testList = new List<Product>();
 
-            try
-            {
+            Utf8JsonReader utf8Reader;
+
+            //try
+            //{
                 if(File.Exists(stFileName))
                 {
                     using (StreamReader sr = File.OpenText(stFileName))
                     {
                         stJsonString = sr.ReadToEnd();
                     }
-                    pLst = new List<Product>(JsonSerializer.Deserialize<List<Product>>(stJsonString));
+/*
+                    byteArray = Encoding.ASCII.GetBytes(stJsonString);
+                    utf8Reader = new Utf8JsonReader(byteArray);
+                    List<Product> deList = JsonSerializer.Deserialize<List<Product>>(ref utf8Reader);*/
+                    pLst = JsonSerializer.Deserialize<List<Product>>(stJsonString);
                     dataGridView1.DataSource = null;
                     dataGridView1.DataSource = pLst;
                 }
@@ -262,11 +274,11 @@ namespace groceries_rev1
                 {
                     MessageBox.Show("No file like this is avalible");
                 }
-            }
-            catch
+            //}
+            /*catch
             {
                 MessageBox.Show("Error loading cart");
-            }
+            }*/
         }
 
         private void BindGrid(List<Product> apList)

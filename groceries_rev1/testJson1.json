@@ -1,0 +1,119 @@
+[
+  {
+    "Count": 2,
+    "Price": 5.9,
+    "ProductionDate": "2022-05-22T00:00:00+03:00",
+    "ExpiryDate": "2022-06-06T00:00:00+03:00",
+    "Image": {
+      "Tag": null,
+      "PhysicalDimension": {
+        "IsEmpty": false,
+        "Width": 60,
+        "Height": 50
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 60,
+        "Height": 50
+      },
+      "Width": 60,
+      "Height": 50,
+      "HorizontalResolution": 96,
+      "VerticalResolution": 96,
+      "Flags": 73744,
+      "RawFormat": {
+        "Guid": "b96b3cab-0728-11d3-9d7b-0000f81ef32e"
+      },
+      "PixelFormat": 137224,
+      "FrameDimensionsList": [
+        "7462dc86-6180-4c7e-8e3f-ee7333a7a483"
+      ],
+      "Palette": {
+        "Flags": 0,
+        "Entries": []
+      },
+      "PropertyIdList": [],
+      "PropertyItems": []
+    },
+    "Type": "Soy",
+    "Total": 11.8
+  },
+  {
+    "Count": 3,
+    "Price": 2.9,
+    "ProductionDate": "2022-05-22T00:00:00+03:00",
+    "ExpiryDate": "2022-06-06T00:00:00+03:00",
+    "Image": {
+      "Tag": null,
+      "PhysicalDimension": {
+        "IsEmpty": false,
+        "Width": 60,
+        "Height": 50
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 60,
+        "Height": 50
+      },
+      "Width": 60,
+      "Height": 50,
+      "HorizontalResolution": 96,
+      "VerticalResolution": 96,
+      "Flags": 73744,
+      "RawFormat": {
+        "Guid": "b96b3cab-0728-11d3-9d7b-0000f81ef32e"
+      },
+      "PixelFormat": 137224,
+      "FrameDimensionsList": [
+        "7462dc86-6180-4c7e-8e3f-ee7333a7a483"
+      ],
+      "Palette": {
+        "Flags": 534820320,
+        "Entries": []
+      },
+      "PropertyIdList": [],
+      "PropertyItems": []
+    },
+    "Type": "Gauda",
+    "Total": 8.7
+  },
+  {
+    "Count": 5,
+    "Price": 4.9,
+    "ProductionDate": "2022-05-22T00:00:00+03:00",
+    "ExpiryDate": "2022-06-06T00:00:00+03:00",
+    "Image": {
+      "Tag": null,
+      "PhysicalDimension": {
+        "IsEmpty": false,
+        "Width": 60,
+        "Height": 50
+      },
+      "Size": {
+        "IsEmpty": false,
+        "Width": 60,
+        "Height": 50
+      },
+      "Width": 60,
+      "Height": 50,
+      "HorizontalResolution": 96,
+      "VerticalResolution": 96,
+      "Flags": 73744,
+      "RawFormat": {
+        "Guid": "b96b3cab-0728-11d3-9d7b-0000f81ef32e"
+      },
+      "PixelFormat": 137224,
+      "FrameDimensionsList": [
+        "7462dc86-6180-4c7e-8e3f-ee7333a7a483"
+      ],
+      "Palette": {
+        "Flags": 0,
+        "Entries": []
+      },
+      "PropertyIdList": [],
+      "PropertyItems": []
+    },
+    "Type": "Chocolate",
+    "Total": 24.5
+  }
+]

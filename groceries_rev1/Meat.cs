@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace groceries_rev1
 {
-    public abstract class Meat : Product
+    public /*abstract*/ class Meat : Product
     {
         private int dWeight;
         private string[] arrstTypes;
